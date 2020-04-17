@@ -15,6 +15,6 @@ function listarPeliculas(req, res) {
 }
 
 
-module.export = {
+module.exports = {
     listarPeliculas: listarPeliculas
 };

@@ -13,10 +13,18 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 app.get('/peliculas', controlador.listarPeliculas);
+//app.get('/generos', controlador.listarGeneros);
+//app.get('/peliculas/recomendacion' , controlador.listaRecomendadas);
+//app.get('/peliculas/:id', controlador.buscarPelicula);
+
+
+/*app.use(bodyParser.json());
+app.get('/peliculas', controlador.listarPeliculas);
+//app.get('/peliculas', controlador.listarPeliculas);*/
+
 //seteamos el puerto en el cual va a escuchar los pedidos la aplicación
 var puerto = '8080';
 
 app.listen(puerto, function () {
   console.log( "Escuchando en el puerto " + puerto );
 });
-
